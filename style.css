@@ -1,0 +1,316 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    /* font-family: "Oswald", sans-serif; */
+  font-weight: 400;
+  font-style: normal;
+    background-size: 100vh 100vw;
+    color: #e8e8e8; 
+    cursor:auto;
+}
+body{
+  overflow-x: hidden;
+  background:linear-gradient(45deg,rgb(1, 1, 83), blue,black);
+  background-attachment: fixed;
+}
+h1,h2,h3,h4,p,li{
+  margin: 5px 30px;
+}
+h1{
+  text-align: center;
+}
+hr{
+  width: 100%;
+  border: 1.5px solid #e8e8e8;
+}
+#nav{
+  margin-top: 0px;
+    height: 55px;
+    width:100vw;
+    display : flex;
+    justify-content: end;
+    position:absolute;
+    top:0;
+    left:0;
+   align-items: center;
+    background-color:linear-gradient(65deg,rgb(0, 0, 53), blue,black);
+    box-shadow: 0px 10px 20px #161616;
+}
+a .index {
+  text-decoration:none;
+  font-style:default;
+  background-color: none;
+  
+}
+a{
+    margin-right: 20px;
+}
+
+.index{
+  height: 2rem;
+  width: 6rem;
+  color:inherit;
+  border:none;
+  background-color:inherit;
+  font:inherit;
+
+   
+    justify-content: center;
+    margin: 5px 10px;
+    align-items: center;
+  }
+  .index:hover{
+    background-color:rgba(255, 255, 255, 0);
+   
+    backdrop-filter: blur(2px);
+    border-radius: 10px;
+    font-size: 18px;
+    box-shadow: 1px 1px 5px white;
+    color:white;
+    transform: scale(1.2);
+    transition: backdrop-filter 10s linear,background-color 10s ease-in ;
+    font-weight: 300;
+    
+   
+
+  }
+header{
+  height: 100px;
+  display: inline;
+  background-color: rgb(0, 0, 180);
+  position: sticky;
+}
+#MyPortfolio{
+    margin-left: 20px;
+    position: absolute;
+    top:1px;
+    left:40px;
+    font-size: 30px;
+    z-index: 1;
+}
+#portfolio{
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+margin: 50px;
+box-shadow: 0px 0px 20px #e8e8e8;
+
+}
+#nav-check{
+  display: none;
+}
+#content{
+  font-size: larger;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+justify-content: space-evenly;
+  align-items: center;
+}
+#info{
+  transition: font-size 1s ease-in-out 0.5s;
+}
+#skills1{
+  display: flex;
+  justify-content: space-between;
+
+  flex-wrap: wrap;
+}
+#projects{
+  margin: 20px;
+  transition: transform 0.5s ease-in-out 0.5s;
+  display: flex; 
+}
+#edu{
+  display :flex;
+  flex-direction: row; 
+  position: relative;
+
+  
+}
+#cou{
+  background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSfXL1nGGmd4WbiHrlDKP89buq3PUOdBu_bQ&s);
+  background-size: 100% 100%;
+  height:500px;
+  width: 500px;
+  align-content: center;
+  text-align: center;
+  border:3px solid white;
+  border-radius: 10px;
+  margin: 10px;
+  font-weight: 500;
+  font-size: 25px;
+  flex:1;
+  
+}
+#cou p{
+  display: none;
+  
+  /* font-family: "Big Shoulders", sans-serif; */
+}
+#sk{
+  height: 150px;
+  width: 150px;
+  margin: 20px;
+  box-shadow: none;
+  border-radius: 30px ;
+  display: flex;
+  justify-content: space-around;
+
+}
+
+ 
+#sk:hover{
+  transition: transform 0.1s ease-in-out;
+  transform:scale(1.1);
+  box-shadow:1px 3px 5px #e8e8e8
+              ,10px 10px 10px black;
+  animation: transition,box-shadow 0ms ease-in-out 0.ms;
+}
+#title{
+  font-size: 30px;
+  font-weight: 500;
+  margin: 10px;
+  color: linear-gradient(65deg,rgb(0, 0, 53), blue,black);
+}
+#cou:hover{
+transition: box-shadow 0.2s ease-in 0s;
+box-shadow: 2px 2px 10px #e8e8e8;
+ display:unset;
+ flex-grow:5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: inherit;
+}
+
+#cou:hover p{
+height: 18rem;
+width: 20rem;
+align-content: center;
+border-radius: 10px;
+ font-weight: 350;
+ font-size: 30px;
+  justify-content:center;
+  display: unset;
+  background-color: #e8e8e80c;
+  backdrop-filter: blur(5px);
+box-shadow: 2px 2px 5px #e8e8e8;
+}
+
+
+#socl div{
+  height: auto;
+  width: auto;
+}
+#socl{
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 20px;
+  width: 94vw;
+  height: 250px;
+  background-color: rgba(0, 0, 0, 0.904);
+  align-items: center;
+    border-radius: 10px;
+    padding-right: 20px;
+}
+#socl i{
+
+  font-size: 60px;
+  color: white;
+  margin:5px;
+
+
+}
+#res h4{
+  font-size: 30px;
+  font-weight: 300;
+}
+
+
+a{
+ font-size: large;
+ font-weight: 300;
+  text-decoration: none;
+}
+.fa-linkedin-in:hover{
+  text-shadow: 2px 5px 20px blue;
+  transform:scale(1.3);
+  transition: transform,text-shadow 0.1s ease-in-out;
+
+}
+.fa-instagram:hover{
+  text-shadow: 2px 5px 10px rgb(255, 0, 179);
+  transform:scale(1.3);
+  transition: transform,text-shadow 0.1s ease-in 0s;
+}
+.fa-whatsapp:hover{
+  text-shadow: 2px 5px 10px rgb(30, 255, 0);
+  transform:scale(1.3);
+  transition: transform,text-shadow 0.1s ease-in 0s;
+}
+.fa-x-twitter:hover{
+  text-shadow: 2px 5px 10px rgba(255, 255, 255, 0.952);
+  transform:scale(1.3);
+  transition: transform,text-shadow 0.1s ease-in 0s;
+}
+.fa-github:hover{
+  text-shadow: 2px 2px 7px rgba(255, 255, 255, 0.952);
+  transform:scale(1.3);
+  transition: transform,text-shadow 0.1s ease-in 0s;
+}
+
+
+/* @media (max-width: 600px) {
+  
+  h1{
+    margin: 5px 20px;
+  }
+  #nav{
+    height: 100vh;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 180);
+    
+  }
+  
+  a{
+    margin: 10px;
+  }
+  #MyPortfolio{
+    margin-left: 0px;
+  }
+  #edu{
+    flex-direction: column;
+  }#socl{
+    flex-wrap: wrap;
+
+  }
+  #edu p{
+    height: 100px;
+    width: 100px;
+  }
+#cou{
+  height: 300px;
+  width: 100vw;
+}
+#cou p{
+  height: 50px;
+  width: 100px;
+}
+#skills1{
+  flex-wrap: wrap;
+}
+#content{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+} */
