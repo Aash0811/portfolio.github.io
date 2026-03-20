@@ -4,135 +4,196 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css"/>
-   <title>MyPortfolio</title>
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Aashrith Rao - Full Stack Web Developer</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    
-  
-  <header>
-    <h1 id="MyPortfolio" title="Welcome to my portfolio">My Portfolio</h1>
-   <div id="nav">
-   <a href="#skills"><button class="index">skills</button></a>
-   <a href="#projects"><button class="index">projects</button></a>
-   <a href="#edu"><button class="index">education</button></a>
-   <a href="#res"><button class="index">contact</button></a>
-   </div>
- 
+  <nav id="nav">
+    <h1 id="MyPortfolio" title="Welcome to my portfolio">Aashrith</h1>
+    <button class="menu-toggle" id="menuToggle" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <div id="nav-links">
+      <a href="#skills" class="index" onclick="closeMenu()">Skills</a>
+      <a href="#project" class="index" onclick="closeMenu()">Projects</a>
+      <a href="#education" class="index" onclick="closeMenu()">Education</a>
+      <a href="#contact" class="index" onclick="closeMenu()">Contact</a>
+    </div>
+  </nav>
+
+  <header id="header">
+    <div id="img1">
+      <img src=".\images\myImg.jpg" alt="Aashrith's Portfolio" title="Hi, I'm Aashrith" id="portfolio">
+    </div>
     <div id="content">
-    <div id="img1"><img src=".\images\myImg.jpg" alt="portfolio" title="Hi,I'm Aashrith" id="portfolio"></div>
-    <div id="info"><h1 id="name">hii!
-      <br>
-      I'm Aashrith 
-    </h1><br>
-  <h3>
-    - full stack  web developer
-  </h3></div>
-</header>
-    
-</div>
+      <div id="info">
+        <h1 id="name">Hey!<br>I'm Aashrith</h1>
+        <h3>Full Stack Web Developer</h3>
+      </div>
+    </div>
+  </header>
 
-<div id="skills">
-  
-  <h1>Skills</h1><br>
+<section id="skills">
+  <h1>Skills & Technologies</h1>
+  <hr>
   <div id="skills1">
-    
-  <img id= "sk" src=".\images\html.png" alt="html language">
-  <img id= "sk" src=".\images\css.png" alt="css language">
-  <img id= "sk" src=".\images\js.png" alt="javascript language">
-  <img id= "sk" src=".\images\java.png" alt="java language">
-  <img id="sk" src=".\images\c.jpeg" alt="c language">
+    <img id="sk" src=".\images\html.png" alt="HTML" title="HTML5">
+    <img id="sk" src=".\images\css.png" alt="CSS" title="CSS3">
+    <img id="sk" src=".\images\js.png" alt="JavaScript" title="JavaScript">
+    <img id="sk" src=".\images\react.png" alt="React" title="react">
+    <img id="sk" src=".\images\node.png" alt="Node" title="Node">
+    <img id="sk" src=".\images\express.png" alt="Express" title="Express">
+    <img id="sk" src=".\images\mongoDB.png" alt="Mongo" title="mongo">
+    <img id="sk" src=".\images\sql.png" alt="SQL" title="SQL">
+    <img id="sk" src=".\images\java.png" alt="Java" title="Java">
+    <img id="sk" src=".\images\c.jpeg" alt="C" title="C">
+    <img id="sk" src=".\images\python.png" alt="python" title="python">
   </div>
-  <br>
-  <br>
-    
-</div>
+</section>
 
-<div id="project">
-  <br>
+<section id="project">
   <h1>Projects</h1>
   <hr>
-  <br>
-  <div id="projects"> 
-    <div><h2>QuickCureHealth</h2>
-      <h4>an online web application for human health service </h4>
+  
+  <div id="projects">
+    <div>
+      <h2>QuickCureHealth</h2>
+      <h4>An online healthcare platform</h4>
       <ul>
-        <li>provides information using symptoms and diseases cause due to it</li>
-        <li>online treatment by specialized doctors</li>
-        <li>nearby hospitals lists</li>
-        <li>medicines door delivery safe and secure </li>
+        <li>Comprehensive symptom-based diagnosis system</li>
+        <li>Online video consultations with specialized doctors</li>
+        <li>Find nearby hospitals and medical facilities</li>
+        <li>Secure medicine delivery service</li>
       </ul>
     </div>
-  
-<div>
-  <img src="" alt="logo">
-</div>
-</div>
-
-<div>
-  <details>
-    <summary>click here for more</summary>
-     <p> &nbsp;&nbsp;&nbsp;&nbsp; QuickCureHealth is an online Health care Platform designed to target individuals who can’t afford time or escalating Health care costs. With the rising demand for affordable healthcare solutions, QuickCureHealth bridges the gap by offering an easy-to-use platform.
-       <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Patients can search for health problems, view symptoms and future complications on the website, and receive advice on temporary relief measures. The platform also allows users to consult doctors via video calls, with options for online appointments and prescription-based medicine delivery. 
-   </p>
-   </details>
-  
-</div>
-
-</div>
-   <h1 >Education</h1>
-   <br><br>
-<div id="edu">
-  
-<div id="cou" class="grade">
-  <h2 id="title">under graduation</h2>
-  <br>
-    <p >college:Jntuh Ucesth<br>
-      course:Computer Science & Engineering<br>
-      year:2023-2027
-      <br>  grade points:8.55</p>
-</div>
-<div id="cou" class="inter"><h2 id="title">intermediate</h2><br>
-<p>
-  college:Alphores junior college<br>
-  course:M.P.C<br>
-  year:2021-2023
-  <br>  grade points:9.84</p>
-</div>
-<div id="cou" class="school"> <h2 id="title">school</h2><br>
-<p>
-  college:St A'nns high school<br>
-  course:State board(SSC)<br>
-  year:2021
-  <br>  grade points:10
-</p>
-</div>
-</div>
-<h1>Contact</h1>
-<hr>
-<br>
-<br>
-<div id="res">
-  
-  <h4>phone number : +91 9059622322</h4>
-  <h4>email :
-     <a href="mailto:aashrith.gonti143@gmail.com" style="font-weight: 400; font-size: 30px;">aashrith.gonti143@gmail.com</a>  
- <h4>address:Jntu college,kphb,kukatpally,hyderabad,telangana</h4>
-  <br>
-  <br>  
-  <br>  
-  <h1>Social links</h1>
-  <div id="socl">
-   <div><a href="https://www.linkedin.com/in/aashrith-rao-gonti-6b9a35300/" target="_blank"><i class="fa-brands fa-linkedin-in"></i><br>linkedin</a></div> 
-   <div><a href="https://www.instagram.com/aashrithraogonti?utm_source=qr&igsh=MTVzcGptMGdkYWt2Mg==" target="_blank"><i class="fa-brands fa-instagram"></i><br>Instagram</a></div>
-   <div><a href="https://wa.me/qr/PWKOQ6U6GFQ5I1"><i class="fa-brands fa-whatsapp" target="_blank"></i><br>whatsapp</a></div>
-   <div><a href="https://x.com/AashrithRao?t=YUftwTm9bNY-D4-y4P6iRw&s=08" target="_blank"><i class="fa-brands fa-x-twitter"></i><br>twitter(x)</a></div>
-   <div><a href="https://github.com/Aash0811"><i class="fa-brands fa-github" target="_blank"></i><br> github</a></div>   
   </div>
-  <div id="extra"></div>
+
+  <details>
+    <summary>📖 Learn More About QuickCureHealth</summary>
+    <p>QuickCureHealth is an innovative online healthcare platform designed to make quality healthcare accessible and affordable. The platform bridges the gap between patients and healthcare professionals by offering:</p>
+    <p>✓ A comprehensive symptom checker that helps users understand health problems and potential complications</p>
+    <p>✓ Direct video consultation options with qualified doctors for personalized medical advice</p>
+    <p>✓ Integration with nearby hospitals for emergency services and follow-up care</p>
+    <p>✓ Prescription-based medicine delivery with secure and safe packaging</p>
+    <p>Built with modern web technologies to ensure a smooth, responsive user experience across all devices.</p>
+  </details>
+</section>  <section id="education">
+    <h1>Education</h1>
+    <hr>
+    <div id="edu"> 
+      <div class="card">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><img src="images/jntuh.png" alt="JNTU"></svg>
+        <div class="card__content">
+          <p class="card__title">Under Graduation</p>
+          <p class="card__description">
+            College: Jawaharlal Nehru Technological University Hyderabad<br>
+            Course: Computer Science & Engineering<br>
+            Year: 2023-2027<br>
+            GPA: 8.65
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0"><img src="images/inter.png" alt="Intermediate"></svg>
+        <div class="card__content">
+          <p class="card__title">Intermediate</p>
+          <p class="card__description">
+            College: Alphores Junior College<br>
+            Course: M.P.C<br>
+            Year: 2021-2023<br>
+            GPA: 9.84
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><img src="images/school.png" alt="School"></svg>
+        <div class="card__content">
+          <p class="card__title">School</p>
+          <p class="card__description">
+            School: St Ann's High School<br>
+            Course: State Board (SSC)<br>
+            Year: 2021<br>
+            GPA: 10
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contact">
+    <h1>Contact & Connect</h1>
+    <hr>
+    <div id="res">
+      <h4>📞 Phone: <a href="tel:+919059622322">+91 9059622322</a></h4>
+      <h4>📧 Email: <a href="mailto:aashrith.gonti143@gmail.com">aashrith.gonti143@gmail.com</a></h4>
+      <h4>📍 Location: JNTU College, KPHB, Kukatpally, Hyderabad, Telangana</h4>
+
+      <h1>Social Links</h1>
+      <div id="socl">
+        <div>
+          <a href="https://www.linkedin.com/in/aashrith-rao-gonti-6b9a35300/" target="_blank" title="LinkedIn">
+            <i class="fa-brands fa-linkedin-in"></i>
+            <span>LinkedIn</span>
+          </a>
+        </div>
+        <div>
+          <a href="https://www.instagram.com/aashrithraogonti?utm_source=qr&igsh=MTVzcGptMGdkYWt2Mg==" target="_blank" title="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+            <span>Instagram</span>
+          </a>
+        </div>
+        <div>
+          <a href="https://wa.me/919059622322" target="_blank" title="WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span>WhatsApp</span>
+          </a>
+        </div>
+        <div>
+          <a href="https://x.com/AashrithRao" target="_blank" title="Twitter">
+            <i class="fa-brands fa-x-twitter"></i>
+            <span>Twitter</span>
+          </a>
+        </div>
+        <div>
+          <a href="https://github.com/Aash0811" target="_blank" title="GitHub">
+            <i class="fa-brands fa-github"></i>
+            <span>GitHub</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Smooth Scroll and Mobile Menu Toggle Script -->
+  <script>
+    // Mobile menu toggle functionality
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('nav-links');
+    
+    function toggleMenu() {
+      menuToggle.classList.toggle('active');
+      navLinks.classList.toggle('active');
+    }
+
+    function closeMenu() {
+      menuToggle.classList.remove('active');
+      navLinks.classList.remove('active');
+    }
+
+    document.querySelectorAll('#nav-links a').forEach(link => {
+      link.addEventListener('click', closeMenu);
+    });
+
+    document.addEventListener('click', function(event) {
+      if (!event.target.closest('#nav')) {
+        closeMenu();
+      }
+    });
+  </script>
  
 </body>
 </html>
