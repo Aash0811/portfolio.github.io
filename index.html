@@ -1,15 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="style.css" />
   <title>Aashrith Rao - Full Stack Web Developer</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
 </head>
+
 <body>
   <nav id="nav">
     <h1 id="MyPortfolio" title="Welcome to my portfolio">Aashrith</h1>
@@ -33,73 +39,151 @@
     <div id="content">
       <div id="info">
         <h1 id="name">Hey!<br>I'm Aashrith</h1>
-        <h3>Full Stack Web Developer</h3>
+        <h3 id="typewriter">Full Stack Web Developer<span id="cursor">|</span></h3>
       </div>
     </div>
   </header>
 
-<section id="skills">
-  <h1>Skills & Technologies</h1>
-  <hr>
-  <div id="skills1">
-    <img id="sk" src=".\images\html.png" alt="HTML" title="HTML5">
-    <img id="sk" src=".\images\css.png" alt="CSS" title="CSS3">
-    <img id="sk" src=".\images\js.png" alt="JavaScript" title="JavaScript">
-    <img id="sk" src=".\images\react.png" alt="React" title="react">
-    <img id="sk" src=".\images\node.png" alt="Node" title="Node">
-    <img id="sk" src=".\images\express.png" alt="Express" title="Express">
-    <img id="sk" src=".\images\mongoDB.png" alt="Mongo" title="mongo">
-    <img id="sk" src=".\images\sql.png" alt="SQL" title="SQL">
-    <img id="sk" src=".\images\java.png" alt="Java" title="Java">
-    <img id="sk" src=".\images\c.jpeg" alt="C" title="C">
-    <img id="sk" src=".\images\python.png" alt="python" title="python">
-  </div>
-</section>
-
-<section id="project">
-  <h1>Projects</h1>
-  <hr>
-  
-  <div id="projects">
-    <div>
-      <h2>QuickCureHealth</h2>
-      <h4>An online healthcare platform</h4>
-      <ul>
-        <li>Comprehensive symptom-based diagnosis system</li>
-        <li>Online video consultations with specialized doctors</li>
-        <li>Find nearby hospitals and medical facilities</li>
-        <li>Secure medicine delivery service</li>
-      </ul>
+  <section id="skills" class="reveal">
+    <h1>Skills & Technologies</h1>
+    <hr>
+    <div id="skills1">
+      <img id="sk" class="reveal" src=".\images\html.png" alt="HTML" title="HTML5">
+      <img id="sk" class="reveal" src=".\images\css.png" alt="CSS" title="CSS3">
+      <img id="sk" class="reveal" src=".\images\js.png" alt="JavaScript" title="JavaScript">
+      <img id="sk" class="reveal" src=".\images\react.png" alt="React" title="react">
+      <img id="sk" class="reveal" src=".\images\node.png" alt="Node" title="Node">
+      <img id="sk" class="reveal" src=".\images\express.png" alt="Express" title="Express">
+      <img id="sk" class="reveal" src=".\images\mongoDB.png" alt="Mongo" title="mongo">
+      <img id="sk" class="reveal" src=".\images\sql.png" alt="SQL" title="SQL">
+      <img id="sk" class="reveal" src=".\images\java.png" alt="Java" title="Java">
+      <img id="sk" class="reveal" src=".\images\c.jpeg" alt="C" title="C">
+      <img id="sk" class="reveal" src=".\images\python.png" alt="python" title="python">
     </div>
-  </div>
+  </section>
 
-  <details>
-    <summary>📖 Learn More About QuickCureHealth</summary>
-    <p>QuickCureHealth is an innovative online healthcare platform designed to make quality healthcare accessible and affordable. The platform bridges the gap between patients and healthcare professionals by offering:</p>
-    <p>✓ A comprehensive symptom checker that helps users understand health problems and potential complications</p>
-    <p>✓ Direct video consultation options with qualified doctors for personalized medical advice</p>
-    <p>✓ Integration with nearby hospitals for emergency services and follow-up care</p>
-    <p>✓ Prescription-based medicine delivery with secure and safe packaging</p>
-    <p>Built with modern web technologies to ensure a smooth, responsive user experience across all devices.</p>
-  </details>
-</section>  <section id="education">
+  <section id="project" class="reveal">
+    <h1>Projects</h1>
+    <hr>
+
+    <div id="projects">
+      <div class="reveal">
+        <h2>MockMate – AI-Powered Mock Interview Platform(<a href="https://mock-mate-project.vercel.app/"
+            target="_blank">link</a>)</h2>
+        <h4>AI-driven platform for theory, coding interviews & peer practice</h4>
+        <ul>
+          <li>Built a full-stack platform for AI theory interviews, coding interviews, and real-time peer interview
+            rooms.</li>
+          <li>Integrated Groq AI for question generation, interview evaluation, communication scoring, and coding
+            feedback.</li>
+          <li>Implemented LiveKit and Socket.IO for real-time video/audio, collaborative coding, notes, and
+            participants.</li>
+          <li>Developed a Monaco coding environment with Python, Java, and C++ execution, with Google OAuth & MongoDB.
+          </li>
+          <li><strong>Tech Stack:</strong> React.js, Vite, Tailwind CSS, Node.js, Express.js, MongoDB, LiveKit,
+            Socket.IO, Monaco, Groq AI.</li>
+        </ul>
+      </div>
+
+      <div class="reveal">
+        <h2>QuickCureHealth (<a href="https://quickcurehealth.onrender.com" target="_blank">link</a>)</h2>
+        <h4>An online teleconsulting healthcare platform</h4>
+        <ul>
+          <li>Comprehensive symptom-based diagnosis system and complication prediction.</li>
+          <li>Online video consultations with specialized doctors via WebRTC.</li>
+          <li>Find nearby hospitals, prescription-based medicine delivery, and lab booking.</li>
+          <li>Patient/doctor dashboards with authentication and location-based discovery.</li>
+          <li><strong>Tech Stack:</strong> Node.js, Express.js, MongoDB, EJS, Passport.js, Socket.IO, Razorpay, WebRTC.
+          </li>
+        </ul>
+      </div>
+
+      <div class="reveal">
+        <h2>FlashComm</h2>
+        <h4>AI-powered automatic messaging system</h4>
+        <ul>
+          <li>Natural language command interpretation powered by DeepSeek AI.</li>
+          <li>Personalized message generation for each database record from spreadsheet data.</li>
+          <li>Multi-channel delivery support including WhatsApp, SMS, and Email using Twilio & Nodemailer.</li>
+          <li>Spreadsheet data integration and seamless batch processing.</li>
+          <li><strong>Tech Stack:</strong> React.js, Node.js, Express.js, DeepSeek AI, Twilio, Nodemailer.</li>
+        </ul>
+      </div>
+    </div>
+
+    <details class="reveal">
+      <summary>📖 Learn More & Screenshots - MockMate</summary>
+      <p class="details-desc">MockMate is an AI-powered mock interview platform designed to empower candidates with
+        real-time technical preparation. It features Groq AI driven theory & coding evaluation, live peer-to-peer video
+        rooms powered by LiveKit, and an embedded multi-language Monaco Code Editor.</p>
+      <div class="project-gallery">
+        <img src="images/project_sample1.png" alt="MockMate Dashboard & AI Evaluation"
+          title="MockMate Dashboard & AI Evaluation">
+        <img src="images/project_sample2.png" alt="MockMate Live Coding & Monaco Editor"
+          title="MockMate Live Coding & Monaco Editor">
+        <img src="images/project_sample3.png" alt="MockMate Peer-to-Peer Live Video Room"
+          title="MockMate Peer-to-Peer Live Video Room">
+        <img src="images/project_sample4.png" alt="MockMate Interview Analytics & Scorecard"
+          title="MockMate Interview Analytics & Scorecard">
+      </div>
+    </details>
+
+    <details class="reveal">
+      <summary>📖 Learn More & Screenshots - QuickCureHealth</summary>
+      <p class="details-desc">QuickCureHealth is a full-stack teleconsulting healthcare platform that connects patients
+        with doctors. It offers AI symptom analysis, real-time WebRTC video consultations, prescription medicine
+        delivery, and hospital discovery.</p>
+      <div class="project-gallery">
+        <img src="images/qch-1.png" alt="QuickCureHealth Home "
+          title="QuickCureHealth Home ">
+        <img src="images/qch-2.png" alt="Doctor Discovery"
+          title="QuickCureHealth Doctor Discovery">
+        <img src="images/qch-3.png" alt="AI Symptom Checker"
+          title="QuickCureHealth AI Symptom Checker">
+        <img src="images/qch-4.png" alt="test booking"
+          title="QuickCureHealth test booking">
+      </div>
+    </details>
+
+    <details class="reveal">
+      <summary>📖 Learn More & Screenshots - FlashComm</summary>
+      <p class="details-desc">FlashComm is an intelligent bulk messaging automation system that transforms spreadsheet
+        data into personalized messages. It leverages DeepSeek AI to parse natural language instructions and dispatch
+        multi-channel delivery via WhatsApp, SMS, and Email.</p>
+      <div class="project-gallery">
+        <img src="images/fcom-1.png" alt="FlashComm Spreadsheet Import Interface"
+          title="FlashComm Spreadsheet Import Interface">
+        <img src="images/fcom-3.png" alt="FlashComm Multi-channel Delivery Status"
+          title="FlashComm Multi-channel Delivery Status">
+          <img src="images/fcom-2.png" alt="FlashComm generated messages"
+          title="FlashComm generated messages">
+        <img src="images/fcom-4.png" alt="FlashComm Resultant Mail" title="FlashComm Resultant Mail">
+      </div>
+    </details>
+  </section>
+
+  <section id="education" class="reveal">
     <h1>Education</h1>
     <hr>
-    <div id="edu"> 
-      <div class="card">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><img src="images/jntuh.png" alt="JNTU"></svg>
+    <div id="edu">
+      <div class="card reveal">
+        <div class="card__img-box">
+          <img src="images/jntuh.png" alt="JNTU">
+        </div>
         <div class="card__content">
           <p class="card__title">Under Graduation</p>
           <p class="card__description">
             College: Jawaharlal Nehru Technological University Hyderabad<br>
             Course: Computer Science & Engineering<br>
             Year: 2023-2027<br>
-            GPA: 8.65
+            GPA: 8.68
           </p>
         </div>
       </div>
-      <div class="card">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0"><img src="images/inter.png" alt="Intermediate"></svg>
+      <div class="card reveal">
+        <div class="card__img-box">
+          <img src="images/inter.png" alt="Intermediate">
+        </div>
         <div class="card__content">
           <p class="card__title">Intermediate</p>
           <p class="card__description">
@@ -110,8 +194,10 @@
           </p>
         </div>
       </div>
-      <div class="card">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><img src="images/school.png" alt="School"></svg>
+      <div class="card reveal">
+        <div class="card__img-box">
+          <img src="images/school.png" alt="School">
+        </div>
         <div class="card__content">
           <p class="card__title">School</p>
           <p class="card__description">
@@ -124,41 +210,42 @@
       </div>
     </div>
   </section>
-  <section id="contact">
+  <section id="contact" class="reveal">
     <h1>Contact & Connect</h1>
     <hr>
-    <div id="res">
-      <h4>📞 Phone: <a href="tel:+919059622322">+91 9059622322</a></h4>
-      <h4>📧 Email: <a href="mailto:aashrith.gonti143@gmail.com">aashrith.gonti143@gmail.com</a></h4>
+    <div id="res" class="reveal">
+      <h4>📞 Phone: <a href="tel:+919063409036">+91 9063409036</a></h4>
+      <h4>📧 Email: <a href="mailto:aashrithraog@gmail.com">aashrithraog@gmail.com</a></h4>
       <h4>📍 Location: JNTU College, KPHB, Kukatpally, Hyderabad, Telangana</h4>
 
       <h1>Social Links</h1>
       <div id="socl">
-        <div>
+        <div class="reveal">
           <a href="https://www.linkedin.com/in/aashrith-rao-gonti-6b9a35300/" target="_blank" title="LinkedIn">
             <i class="fa-brands fa-linkedin-in"></i>
             <span>LinkedIn</span>
           </a>
         </div>
-        <div>
-          <a href="https://www.instagram.com/aashrithraogonti?utm_source=qr&igsh=MTVzcGptMGdkYWt2Mg==" target="_blank" title="Instagram">
+        <div class="reveal">
+          <a href="https://www.instagram.com/aashrithraogonti?utm_source=qr&igsh=MTVzcGptMGdkYWt2Mg==" target="_blank"
+            title="Instagram">
             <i class="fa-brands fa-instagram"></i>
             <span>Instagram</span>
           </a>
         </div>
-        <div>
-          <a href="https://wa.me/919059622322" target="_blank" title="WhatsApp">
+        <div class="reveal">
+          <a href="https://wa.me/919063409036" target="_blank" title="WhatsApp">
             <i class="fa-brands fa-whatsapp"></i>
             <span>WhatsApp</span>
           </a>
         </div>
-        <div>
+        <div class="reveal">
           <a href="https://x.com/AashrithRao" target="_blank" title="Twitter">
             <i class="fa-brands fa-x-twitter"></i>
             <span>Twitter</span>
           </a>
         </div>
-        <div>
+        <div class="reveal">
           <a href="https://github.com/Aash0811" target="_blank" title="GitHub">
             <i class="fa-brands fa-github"></i>
             <span>GitHub</span>
@@ -168,12 +255,19 @@
     </div>
   </section>
 
-  <!-- Smooth Scroll and Mobile Menu Toggle Script -->
+  <!-- Lightbox Modal for Fullscreen Image Viewing -->
+  <div id="imageModal" class="modal" onclick="closeModal(event)">
+    <span class="modal-close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImg" alt="Expanded Screenshot">
+    <div id="modalCaption"></div>
+  </div>
+
+  <!-- Smooth Scroll, Mobile Menu Toggle & Lightbox Script -->
   <script>
     // Mobile menu toggle functionality
     const menuToggle = document.getElementById('menuToggle');
     const navLinks = document.getElementById('nav-links');
-    
+
     function toggleMenu() {
       menuToggle.classList.toggle('active');
       navLinks.classList.toggle('active');
@@ -188,12 +282,105 @@
       link.addEventListener('click', closeMenu);
     });
 
-    document.addEventListener('click', function(event) {
+    document.addEventListener('click', function (event) {
       if (!event.target.closest('#nav')) {
         closeMenu();
       }
     });
+
+    // Typing effect
+    const typewriter = document.getElementById('typewriter');
+    const cursor = document.getElementById('cursor');
+    const texts = ['Full Stack Web Developer', 'MERN Stack Developer'];
+    let textIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+    const typingSpeed = 100;
+    const deletingSpeed = 50;
+    const pauseTime = 2000;
+
+    function type() {
+      const currentText = texts[textIndex];
+
+      if (isDeleting) {
+        typewriter.textContent = currentText.substring(0, charIndex - 1);
+        charIndex--;
+
+        if (charIndex === 0) {
+          isDeleting = false;
+          textIndex = (textIndex + 1) % texts.length;
+          setTimeout(type, 500);
+          return;
+        }
+        setTimeout(type, deletingSpeed);
+      } else {
+        typewriter.textContent = currentText.substring(0, charIndex + 1);
+        charIndex++;
+
+        if (charIndex === currentText.length) {
+          isDeleting = true;
+          setTimeout(type, pauseTime);
+          return;
+        }
+        setTimeout(type, typingSpeed);
+      }
+    }
+
+    setInterval(() => {
+      cursor.style.opacity = cursor.style.opacity === '0' ? '1' : '0';
+    }, 500);
+
+    type();
+
+    // Intersection Observer for Smooth Component Scroll Reveal
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px 0px -50px 0px',
+      threshold: 0.15
+    };
+
+    const revealObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('reveal-active');
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+    // Lightbox Modal Image Viewer
+    const modal = document.getElementById('imageModal');
+    const modalImg = document.getElementById('modalImg');
+    const modalCaption = document.getElementById('modalCaption');
+
+    function openModal(imgElement) {
+      modal.style.display = 'block';
+      modalImg.src = imgElement.src;
+      modalCaption.textContent = imgElement.alt || imgElement.title || 'Project Screenshot';
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal(event) {
+      if (!event || event.target === modal || event.target.classList.contains('modal-close')) {
+        modal.style.display = 'none';
+        document.body.style.overflow = 'auto';
+      }
+    }
+
+    document.querySelectorAll('.project-gallery img').forEach(img => {
+      img.addEventListener('click', function () {
+        openModal(this);
+      });
+    });
+
+    document.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape' && modal.style.display === 'block') {
+        closeModal();
+      }
+    });
   </script>
- 
+
 </body>
+
 </html>
