@@ -34,7 +34,7 @@
 
   <header id="header">
     <div id="img1">
-      <img src=".\images\myImg.jpg" alt="Aashrith's Portfolio" title="Hi, I'm Aashrith" id="portfolio">
+      <img src="images/myImg.jpg" alt="Aashrith's Portfolio" title="Hi, I'm Aashrith" id="portfolio">
     </div>
     <div id="content">
       <div id="info">
@@ -48,17 +48,17 @@
     <h1>Skills & Technologies</h1>
     <hr>
     <div id="skills1">
-      <img id="sk" class="reveal" src=".\images\html.png" alt="HTML" title="HTML5">
-      <img id="sk" class="reveal" src=".\images\css.png" alt="CSS" title="CSS3">
-      <img id="sk" class="reveal" src=".\images\js.png" alt="JavaScript" title="JavaScript">
-      <img id="sk" class="reveal" src=".\images\react.png" alt="React" title="react">
-      <img id="sk" class="reveal" src=".\images\node.png" alt="Node" title="Node">
-      <img id="sk" class="reveal" src=".\images\express.png" alt="Express" title="Express">
-      <img id="sk" class="reveal" src=".\images\mongoDB.png" alt="Mongo" title="mongo">
-      <img id="sk" class="reveal" src=".\images\sql.png" alt="SQL" title="SQL">
-      <img id="sk" class="reveal" src=".\images\java.png" alt="Java" title="Java">
-      <img id="sk" class="reveal" src=".\images\c.jpeg" alt="C" title="C">
-      <img id="sk" class="reveal" src=".\images\python.png" alt="python" title="python">
+      <img class="sk-icon reveal" src="images/html.png" alt="HTML" title="HTML5">
+      <img class="sk-icon reveal" src="images/css.png" alt="CSS" title="CSS3">
+      <img class="sk-icon reveal" src="images/js.png" alt="JavaScript" title="JavaScript">
+      <img class="sk-icon reveal" src="images/react.png" alt="React" title="react">
+      <img class="sk-icon reveal" src="images/node.png" alt="Node" title="Node">
+      <img class="sk-icon reveal" src="images/express.png" alt="Express" title="Express">
+      <img class="sk-icon reveal" src="images/mongoDB.png" alt="Mongo" title="mongo">
+      <img class="sk-icon reveal" src="images/sql.png" alt="SQL" title="SQL">
+      <img class="sk-icon reveal" src="images/java.png" alt="Java" title="Java">
+      <img class="sk-icon reveal" src="images/c.jpeg" alt="C" title="C">
+      <img class="sk-icon reveal" src="images/python.png" alt="python" title="python">
     </div>
   </section>
 
@@ -378,6 +378,13 @@
       if (event.key === 'Escape' && modal.style.display === 'block') {
         closeModal();
       }
+    });
+
+    // Education cards tap/click toggle for touch & mobile devices
+    document.querySelectorAll('.card').forEach(card => {
+      card.addEventListener('click', function () {
+        this.classList.toggle('flipped');
+      });
     });
   </script>
 
